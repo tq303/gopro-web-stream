@@ -21,6 +21,8 @@ app.listen(port);
 
 app.get('/stream', (req, res)=> {
 
+	res.set('Content-Type', 'application/x-mpegURL');
+	
 	request.get(AUTH_GOPRO_REQUEST, (err, response)=> {
 
 		request.get(GOPRO_VIDEO_STREAM)
