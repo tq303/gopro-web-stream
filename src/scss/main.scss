@@ -1,0 +1,14 @@
+@import "_bootstrap_variables.scss";
+
+@import "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+@import "_reset";
+@import "_mixins";
+
+// DEFAULTS
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background: #000;
+}
